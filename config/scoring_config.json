@@ -1,0 +1,23 @@
+{
+  "target_categories": [
+    "Fashion",
+    "Beauty",
+    "Home & Living"
+  ],
+  "rules": {
+    "has_ecommerce_channel": 2,
+    "category_match": 2,
+    "price_tier": {
+      "premium": 2,
+      "mass_market": 1,
+      "luxury": 0,
+      "unknown": 0
+    },
+    "has_representative_products": 1
+  },
+  "grade_thresholds": {
+    "A": 6,
+    "B": 4,
+    "C": 0
+  }
+}

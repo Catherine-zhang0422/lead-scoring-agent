@@ -1,0 +1,96 @@
+{
+  "Aura London": {
+    "website": "https://auralondon-demo.example.com",
+    "website_status": "active",
+    "has_ecommerce_channel": true,
+    "amazon_url": "https://www.amazon.co.uk/stores/AuraLondon/page/demo",
+    "amazon_presence": "official_store",
+    "amazon_relationship": "verified_official",
+    "category": "Fashion",
+    "representative_products": [
+      {"name": "Cashmere Scarf", "url": "https://auralondon-demo.example.com/scarf", "price": 45.00, "currency": "GBP", "evidence_id": "ev_aura_1"},
+      {"name": "Silk Blouse", "url": "https://auralondon-demo.example.com/blouse", "price": 120.00, "currency": "GBP", "evidence_id": "ev_aura_2"}
+    ],
+    "evidence": [
+      {"id": "ev_aura_1", "source_url": "https://auralondon-demo.example.com/scarf", "summary": "Official online shop verified with GBP pricing.", "timestamp": "2026-11-01T10:00:00Z"},
+      {"id": "ev_aura_2", "source_url": "https://www.amazon.co.uk/stores/AuraLondon/page/demo", "summary": "Verified official Amazon UK brand storefront.", "timestamp": "2026-11-01T10:00:01Z"}
+    ],
+    "research_status": "success",
+    "warnings": []
+  },
+  "Botanica Glow": {
+    "website": "https://botanicaglow-demo.example.com",
+    "website_status": "active",
+    "has_ecommerce_channel": true,
+    "amazon_url": null,
+    "amazon_presence": "none",
+    "amazon_relationship": "none",
+    "category": "Beauty",
+    "representative_products": [
+      {"name": "Organic Serum", "url": "https://botanicaglow-demo.example.com/serum", "price": 28.00, "currency": "GBP", "evidence_id": "ev_bot_1"}
+    ],
+    "evidence": [
+      {"id": "ev_bot_1", "source_url": "https://botanicaglow-demo.example.com/serum", "summary": "Direct e-commerce checkout available.", "timestamp": "2026-11-01T10:00:02Z"}
+    ],
+    "research_status": "success",
+    "warnings": []
+  },
+  "Nordic Haven": {
+    "website": "https://nordichaven-demo.example.com",
+    "website_status": "active",
+    "has_ecommerce_channel": false,
+    "amazon_url": "https://www.amazon.co.uk/dp/B00DEMO3",
+    "amazon_presence": "product_listing",
+    "amazon_relationship": "third_party",
+    "category": "Home & Living",
+    "representative_products": [
+      {"name": "Oak Tray", "url": "https://nordichaven-demo.example.com/tray", "price": 160.00, "currency": "GBP", "evidence_id": "ev_nord_1"}
+    ],
+    "evidence": [
+      {"id": "ev_nord_1", "source_url": "https://nordichaven-demo.example.com/tray", "summary": "Website lacks direct checkout; products sold via third party.", "timestamp": "2026-11-01T10:00:03Z"}
+    ],
+    "research_status": "success",
+    "warnings": ["Amazon listing is third-party reseller; official store not verified."]
+  },
+  "Apex Gear": {
+    "website": "https://apexgear-demo.example.com",
+    "website_status": "active",
+    "has_ecommerce_channel": true,
+    "amazon_url": null,
+    "amazon_presence": "none",
+    "amazon_relationship": "none",
+    "category": "Sporting Goods",
+    "representative_products": [],
+    "evidence": [
+      {"id": "ev_apex_1", "source_url": "https://apexgear-demo.example.com", "summary": "E-commerce active but no clear GBP product pricing found.", "timestamp": "2026-11-01T10:00:04Z"}
+    ],
+    "research_status": "success",
+    "warnings": ["No valid GBP representative products found."]
+  },
+  "Shadow Brand": {
+    "website": null,
+    "website_status": "unknown",
+    "has_ecommerce_channel": false,
+    "amazon_url": null,
+    "amazon_presence": "unknown",
+    "amazon_relationship": "unknown",
+    "category": "unknown",
+    "representative_products": [],
+    "evidence": [],
+    "research_status": "partial",
+    "warnings": ["No website provided or discovered during directory parsing."]
+  },
+  "Broken Link Co": {
+    "website": "https://broken-link-demo.example.com",
+    "website_status": "error",
+    "has_ecommerce_channel": false,
+    "amazon_url": null,
+    "amazon_presence": "unknown",
+    "amazon_relationship": "unknown",
+    "category": "Fashion",
+    "representative_products": [],
+    "evidence": [],
+    "research_status": "failed",
+    "warnings": ["HTTP connection timeout when accessing brand website."]
+  }
+}
