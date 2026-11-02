@@ -10,6 +10,9 @@ class BaseSearchAdapter:
 
 
 class FixtureSearchAdapter(BaseSearchAdapter):
+    is_demo = True
+
+    def __init__(self, fixture_path="sample_data/fixtures/mock_responses.json"):
     def __init__(self, fixture_path: str = "sample_data/fixtures/mock_responses.json"):
         self.fixture_path = fixture_path
         self.data = self._load_fixtures()
